@@ -4,7 +4,7 @@
 
 	<groupId>com.xuexibao</groupId>
 	<artifactId>xserver</artifactId>
-	<version>3.0</version>
+	<version>0.5</version>
 	<packaging>jar</packaging>
 
 	<name>xserver</name>
