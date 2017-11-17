@@ -22,7 +22,6 @@ import javax.servlet.http.HttpServletResponse;
 import com.alibaba.fastjson.JSON;
 
 import xserver.Config;
-import xserver.XServerConfig;
 import xserver.exception.LogicalException;
 import xserver.exception.UnInitilized;
 import xserver.service.http.protocol.JsonProtocol;
@@ -181,12 +180,6 @@ public class ApiGateway extends HttpServlet {
         response.setHeader("Server", ApiGateway.SERVER_HEADER);
         response.setHeader("ms_id", this.msid);
         String pathInfo = request.getPathInfo();// 接口访问路径
-        try {
-            if ("test".equals(XServerConfig.getInst().env)) {
-                pathInfo = pathInfo.replaceFirst("/test/api", "");
-            }
-        } catch (Exception e1) {
-        }
 
         XEnv env = new XEnv(request, response);
         env.pathInfo = pathInfo;
