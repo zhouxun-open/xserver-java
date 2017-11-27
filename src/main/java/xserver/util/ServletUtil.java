@@ -20,6 +20,10 @@ import xserver.exception.LogicalException;
 import xserver.exception.ReadPostException;
 
 public class ServletUtil {
+<<<<<<< HEAD
+=======
+
+>>>>>>> 858ccacdb79cd2a989ea0107abb3f04858acd3e5
     /**
      * 解析url中的参数
      *
@@ -145,6 +149,11 @@ public class ServletUtil {
         os.close();
     }
 
+<<<<<<< HEAD
+=======
+    static final String digits = "0123456789ABCDEF";
+
+>>>>>>> 858ccacdb79cd2a989ea0107abb3f04858acd3e5
     public static void sendCookie(HttpServletResponse response, Cookie cookie) {
         response.addCookie(cookie);
     }

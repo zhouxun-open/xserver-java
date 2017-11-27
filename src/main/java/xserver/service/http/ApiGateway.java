@@ -48,6 +48,11 @@ public class ApiGateway extends HttpServlet {
 
         String[] middlewares() default {};
 
+<<<<<<< HEAD
+=======
+        Class<?>[] methods() default {};
+
+>>>>>>> 858ccacdb79cd2a989ea0107abb3f04858acd3e5
         Class<?> protocol() default JsonProtocol.class;
 
         int option() default JsonProtocol.DEFAULT_OPT;
